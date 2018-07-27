@@ -1,14 +1,34 @@
 # Insightfuls_01
-Development of an idea that reduces DevOoops and promotes a competence in DevOps. 
+Development Operations to serve user submission of musculoskeletal radiographies to a Apache Spark Deep Learning evaluation and continued training application served on a Cloud network with an emphasis of maintaining site availability during infrastructure failures. 
 
 # Background
-Site reliablility is of primary importance for internet businesses. The company not only loses the revenue stream when a site is unavailable, but also depletes from its user base and fails to attract new customers. The industry best practices describe distributing servers across multiple availability zones, allowing data transfer across a low-latency connection to a mirrored server that remains ready as a backup. 
-The largest webservices companies provide centers (or availability zones) across distinct geographical areas within a region. Though, entire regions can fail, and have done so due to various occurrences. Most often these occurrences involve administrator error. Though, natural disasters are likely to play more prominently in site-availability concerns as hurricanes reach further north along the North American coast and fires rage through the west. 
-The time to recover from a regional outage leaves a company dependent on the web services provider to resolve the problem or an estimated 24-hour period required for the recursive name servers to update it's collective cache if the user decides to mitigate the consequences by launching a new server. 
+Site reliablility is of primary importance for internet businesses. The company not only loses the revenue stream when a site is unavailable, but also depletes from its user base, fails to attract new customers, and potentially damages the company's reputation. DevOps best practices describe distributing infrastructure across multiple Availability Zones (AZ) within a Region, allowing data transfer across low-latency connections to mirrored servers that remain ready as backup. Webservices companies support such architectures by building computing centers across distinct geographical areas within the Region. Though, entire regions can fail, and have done so due to various occurrences. The causes can involve administrative error. Though, natural disasters are likely to play more prominently in site-availability concerns as hurricanes reach further along the North American coast and fires rage through the West. Thus, a step beyond the prescribed best practices is to build multi-regional architectures. 
 
-# Problem
-Resolving a fallen region could take an unpredictable amount of time for a service provider to fix the facility or as long as 24-hours to resolve a new IP address. 
+# Challenges for the DevOps professional
+Failures due to server error within a resolution should be planned for by introducing redundancy and monitoring infrastructure. Though, failure of an entire AZ requires that users be shuttled to another Region, which is complicated by DNS servers that might prohibit rapidly shifting infrastructure. The DevOps professional is faced with waiting an unpredictable amount of time for a service provider to fix the facility or as long as 24-hours if the solution is to re-build infrastructure at a new IP address. 
 
-# Solution
+# Demostration of Best Practices and Infrastructure Preparedness
+*Amazon AWS is used for the demonstration. So, while general applications will be implemented as much as possible, the demonstration oftens cites AWS services and hardware. Further, my general interests lie in machine learning and artificial intelligence while my previous training is in the life sciences. Thus, I have chosen to model the classification of musculoskeletal radiographies to highlight these interests. Yet, the models could be easily adapted for competitive intelligence focused on financial information, patent data, biomedical statistics, or cats.* 
+
+  ##**Infrastructure as Code** will be built using **Terraform**, which allows straight forward planning and implementation that can be easily shared, edited, and versioned.  
+
+  ##**Route 53** helps to make connections between domain names and IP addresses in different Regions. Route 53 also monitors the health of infrastructure across these Regions and routes traffic away from unhealthy resources. If all resources are optimally working, users can be routed based on their proximity to resources.  
+
+  ##**Elastic Load Balancing** (elb) implements active redundancy and will be combined with **Auto Scaling** so that automated health checks facilitate the direction of traffic to healthy nodes that are automatically (re)balanced across a Region.
+
+  ##**Amazon EC2** instances will be used to serve and host **Apache Spark** 
+
+  ##** **
+
+  ##** **
+
+  ##** **
+
+# Leap Goal
 Try to use the recursive DNS servers' eventual consistency to reduce the downtime of users in a stricken region by serving duplicate IP addresses to a single region. 
+
+# Alternatives
+While using multiple regions within Amazon AWS is a viable option in facilitating greater site availability, the solution ties its users to the vendor (and does so at greater costs to the user). Another option is to create infrastructure using multiple vendors such as AWS, GCP, Azure, OpenStack, VMware, and more. Terraform functions across mutliple vendors and additional enterprise software is available to manage such setups. 
+
+The time to recover from a regional outage leaves a company dependent on the web services provider to resolve the problem or an estimated 24-hour period required for the recursive name servers to update it's collective cache if the user decides to mitigate the consequences by launching a new server. 
 

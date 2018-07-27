@@ -10,19 +10,19 @@ Failures due to server error within a resolution should be planned for by introd
 # Demostration of Best Practices and Infrastructure Preparedness
 *Amazon AWS is used for the demonstration. So, while general applications will be implemented as much as possible, the demonstration oftens cites AWS services and hardware. Further, my general interests lie in machine learning and artificial intelligence while my previous training is in the life sciences. Thus, I have chosen to model the classification of musculoskeletal radiographies to highlight these interests. Yet, the models could be easily adapted for competitive intelligence focused on financial information, patent data, biomedical statistics, or cats.* 
 
-  ## **Infrastructure as Code** will be built using **Terraform**, which allows straight forward planning and implementation that can be easily shared, edited, and versioned.  
+  **Infrastructure as Code** will be built using **Terraform**, which allows straight forward planning and implementation that can be easily shared, edited, and versioned.  
 
-  ## **Route 53** helps to make connections between domain names and IP addresses in different Regions. Route 53 also monitors the health of infrastructure across these Regions and routes traffic away from unhealthy resources. If all resources are optimally working, users can be routed based on their proximity to resources.  
+  **Route 53** helps to make connections between domain names and IP addresses in different Regions. Route 53 also monitors the health of infrastructure across these Regions and routes traffic away from unhealthy resources. If all resources are optimally working, users can be routed based on their proximity to resources.  
 
-  ## **Elastic Load Balancing** (elb) implements active redundancy and will be combined with **Auto Scaling** so that automated health checks facilitate the direction of traffic to healthy nodes that are automatically (re)balanced across a Region.
+  **Elastic Load Balancing** (elb) implements active redundancy and will be combined with **Auto Scaling** so that automated health checks facilitate the direction of traffic to healthy nodes that are automatically (re)balanced across a Region.
 
-  ## **Amazon EC2** instances will be used to serve and host **Apache Spark** 
+  **Amazon EC2** instances will be used to serve and host **Apache Spark** 
 
-  ## ** **
+  ** **
 
-  ## ** **
+  ** **
 
-  ## ** **
+  ** **
 
 # Leap Goal
 Try to use the recursive DNS servers' eventual consistency to reduce the downtime of users in a stricken region by serving duplicate IP addresses to a single region. 

@@ -32,3 +32,6 @@ While using multiple regions within Amazon AWS is a viable option in facilitatin
 
 The time to recover from a regional outage leaves a company dependent on the web services provider to resolve the problem or an estimated 24-hour period required for the recursive name servers to update it's collective cache if the user decides to mitigate the consequences by launching a new server. 
 
+# References
+MURA: Large Dataset for Abnormality Detection in Musculoskeletal Radiographs.
+Pranav Rajpurkar*, Jeremy Irvin*, Aarti Bagul, Daisy Ding, Tony Duan, Hershel Mehta, Brandon Yang, Kaylie Zhu, Dillon Laird, Robyn L. Ball, Curtis Langlotz, Katie Shpanskaya, Matthew P. Lungren, Andrew Y. Ng

@@ -16,7 +16,9 @@ Failures due to server error within a resolution should be planned for by introd
 
   **Elastic Load Balancing** (elb) implements active redundancy and will be combined with **Auto Scaling** so that automated health checks facilitate the direction of traffic to healthy nodes that are automatically (re)balanced across a Region.
 
-  **Amazon EC2** instances will be used to serve and host **Apache Spark**. Spark facilitates Deep Learning through a Saprk MLlib. The Machine Learning library allows Tensorflow-backed Keras models to be plugged into Spark so that the models can be applied in a distributed and scaled model. 
+  **Amazon EC2** instances will be used to serve and host **Apache Spark**. Spark facilitates Deep Learning through a Spark MLlib. The Machine Learning library allows Tensorflow-backed Keras models to be plugged into Spark so that the models can be applied in a distributed and scaled model. 
+
+  **Spark** allows several options for the data pipeline. The easiest of these options is to simply store data on disk in a folder which could even be absorbed directly into a model or with user-defined proportions from subfolders. Though, the most powerful seems to be **SparkSQL UDF's** (user defined functions) that can be exposed as a function in SQL and accessed and used by anyone, essentially searching computed classifications on-the-fly. 
 
   ** **
 

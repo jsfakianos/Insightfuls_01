@@ -12,7 +12,7 @@ Failures due to server error within a resolution should be planned for by introd
 
   **Infrastructure as Code** will be built using **Terraform**, which allows straight forward planning and implementation that can be easily shared, edited, and versioned.  
 
-## Figure of planned infrastructure
+#### Figure of planned infrastructure
 ![Infrastructure](Cloud.jpg)
 
 
@@ -41,3 +41,5 @@ The time to recover from a regional outage leaves a company dependent on the web
 # References
 MURA: Large Dataset for Abnormality Detection in Musculoskeletal Radiographs.
 Pranav Rajpurkar*, Jeremy Irvin*, Aarti Bagul, Daisy Ding, Tony Duan, Hershel Mehta, Brandon Yang, Kaylie Zhu, Dillon Laird, Robyn L. Ball, Curtis Langlotz, Katie Shpanskaya, Matthew P. Lungren, Andrew Y. Ng
+
+

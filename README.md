@@ -22,7 +22,9 @@ Failures due to server error within a resolution should be planned for by introd
 
   **Amazon EC2** instances will be used to serve and host **Apache Spark**. Spark facilitates Deep Learning through a Spark MLlib. The Machine Learning library allows Tensorflow-backed Keras models to be plugged into Spark so that the models can be applied in a distributed and scaled model. 
 
-  **Amazon S3** will be used to store new data as it is uploaded from a hospital professional, radiographer, or physician. This data will be pulled to a machine learning capable **EC2 P3** instance for continued training and evolution of the model which would then be integrated into other **EC2** instances for serving the application and receving the uploaded images. 
+  **Amazon S3** will be used to store new data as it is uploaded from a hospital professional, radiographer, or physician. This data will be pulled to a machine learning capable **EC2 P3** instance for continued training and evolution of the model which would then be integrated into other **EC2** instances configured for serving the application and receiving the uploaded images. 
+
+  The machine learning aspects are not meant to be a focus of this DevOps project as the infrastructure is meant to serve as a model for any machine learning project. Though, it is worth meantioning that the project is designed to allow continuous training of a **DenseNet201 convolutional neural network** with continuous deployment of the newly trained model.
 
   ** **
 
@@ -40,6 +42,9 @@ The time to recover from a regional outage leaves a company dependent on the web
 
 # References
 MURA: Large Dataset for Abnormality Detection in Musculoskeletal Radiographs.
-Pranav Rajpurkar*, Jeremy Irvin*, Aarti Bagul, Daisy Ding, Tony Duan, Hershel Mehta, Brandon Yang, Kaylie Zhu, Dillon Laird, Robyn L. Ball, Curtis Langlotz, Katie Shpanskaya, Matthew P. Lungren, Andrew Y. Ng
+Pranav Rajpurkar, Jeremy Irvin, Aarti Bagul, Daisy Ding, Tony Duan, Hershel Mehta, Brandon Yang, Kaylie Zhu, Dillon Laird, Robyn L. Ball, Curtis Langlotz, Katie Shpanskaya, Matthew P. Lungren, Andrew Y. Ng
+
+Densely Connected Convolutional Networks.
+Gao Huang, Zhuang Liu, Laurens van der Maaten, Kilian Q. Weinberger
 
 

@@ -12,6 +12,9 @@ Failures due to server error within a resolution should be planned for by introd
 
   **Infrastructure as Code** will be built using **Terraform**, which allows straight forward planning and implementation that can be easily shared, edited, and versioned.  
 
+![Infrastructure](Cloud.jpg)
+
+
   **Route 53** helps to make connections between domain names and IP addresses in different Regions. Route 53 also monitors the health of infrastructure across these Regions and routes traffic away from unhealthy resources. If all resources are optimally working, users can be routed based on their proximity to resources.  
 
   **Elastic Load Balancing** (elb) implements active redundancy and will be combined with **Auto Scaling** so that automated health checks facilitate the direction of traffic to healthy nodes that are automatically (re)balanced across a Region.

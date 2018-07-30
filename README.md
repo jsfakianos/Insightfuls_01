@@ -22,7 +22,7 @@ Failures due to server error within a resolution should be planned for by introd
 
   **Amazon EC2** instances will be used to serve and host **Apache Spark**. Spark facilitates Deep Learning through a Spark MLlib. The Machine Learning library allows Tensorflow-backed Keras models to be plugged into Spark so that the models can be applied in a distributed and scaled model. 
 
-  **Spark** allows several options for the data pipeline. The easiest of these options is to simply store data on disk in a folder which could even be absorbed directly into a model or with user-defined proportions from subfolders. Though, the most powerful seems to be **SparkSQL UDF's** (user defined functions) that can be exposed as a function in SQL and accessed and used by anyone, essentially searching computed classifications on-the-fly. 
+  **Amazon S3** will be used to store new data as it is uploaded from a hospital professional, radiographer, or physician. This data will be pulled to a machine learning capable **EC2 P3** instance for continued training and evolution of the model which would then be integrated into other **EC2** instances for serving the application and receving the uploaded images. 
 
   ** **
 

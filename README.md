@@ -12,6 +12,7 @@ Failures due to server error within a resolution should be planned for by introd
 
   **Infrastructure as Code** will be built using **Terraform**, which allows straight forward planning and implementation that can be easily shared, edited, and versioned.  
 
+## Figure of planned infrastructure
 ![Infrastructure](Cloud.jpg)
 
 

@@ -49,7 +49,7 @@ variable "amis" {
   type                = "map"
   default             = {
         "region-A"         = "ami-088e41413298030dd"
-        "region-B"         = "ami-099ad26e565281a23"
+        "region-B"         = "ami-0076e3a833327e4f2"
         
   }
 }

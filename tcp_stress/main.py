@@ -70,6 +70,7 @@ def get_http(ip_address='', set=1, request_time=0.0, file_path=None):
 IPs = set()
 def get_targets():
     IPs_temp = set()
+    IPs_temp.add(('sfaki.com', 'www.sfaki.com'))
     elb = boto3.client('elbv2')
     elbs = elb.describe_load_balancers()
 
@@ -201,7 +202,7 @@ def repeated_goes(time_interval, set_index, path=None):
 
 
 
-destruction_constant = 2
+destruction_constant = 0
 time_intervals = [2.0, 1.0, 0.5]
 
 #time_intervals = [2.0]
